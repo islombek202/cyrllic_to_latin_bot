@@ -19,3 +19,4 @@ def echo_all(message):
 		bot.reply_to(message, to_cyrillic(text))
 	else: 
 		bot.reply_to(message, to_latin(text))
+bot.infinity_polling()
