@@ -2,7 +2,7 @@ import telebot
 import os
 from dotenv import load_dotenv
 from transliterate import to_cyrillic, to_latin
-TOKEN = "8780903331:AAEKC36vJuRpIGxSRoGhiIFG2iTNd5TELGE"
+TOKEN = "8780903331:AAFengmcAYh7vyf0xD8wzvY2-dZbgL3nybQ"
 load_dotenv()
 
 TOKEN = os.getenv("BOT_TOKEN")
@@ -20,3 +20,4 @@ def echo_all(message):
 	else: 
 		bot.reply_to(message, to_latin(text))
 bot.infinity_polling()
+print(TOKEN)
